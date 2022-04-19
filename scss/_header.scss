@@ -5,7 +5,8 @@ header{
     padding: 42px 25px;
     position: relative;
 
-
+    // MOBILE VIEW
+    
     >img{
         width: 111px;
         height: 26px;
@@ -16,16 +17,16 @@ header{
         height: 0;
         overflow: hidden;
         background-image:linear-gradient(to bottom, hsla(227, 12%, 61%, .1), hsla(233, 12%, 13%, .6));
-
         position: absolute;
         top: 110px;
         right: 0;
         left: 0;
-        @include transition;
+        @include transition(.5s);
         
         &.open{
             height: 100vh;
             overflow: visible;
+
 
             ul{
                 height: 236px;
@@ -44,7 +45,7 @@ header{
             padding: 16px 0;
             left: 50%;
             transform: translateX(-50%);
-            @include transition;
+            @include transition(.5s);
 
             li{
                 margin-bottom: 26px;
@@ -60,7 +61,7 @@ header{
                     font-weight: weight(bolder);
                     width: 100%;
                     height: 100%;
-                    @include transition;
+                    @include transition(.5s);
 
                     &:hover{
                         color: $dark-grayish-blue;
@@ -91,7 +92,7 @@ header{
             height: 4px;
             background-color: $dark-blue;
             margin-bottom: 3px;
-            @include transition;
+            @include transition(.5s);
         }
 
         &.open-nav{
@@ -108,6 +109,63 @@ header{
                 transform-origin: 7px;
             }
 
+        }
+    }
+
+    // DESKTOP VIEW
+
+    @include desktop{
+
+        // img{
+            
+        // }
+
+        nav{
+            height: unset;
+            width: max-content;
+            background: transparent;
+            position: relative;
+            overflow: visible;
+            top: unset;
+            right: unset;
+            left: unset;
+            transform: unset;
+
+            ul{
+                position: relative;
+                flex-direction: row;
+                width: 100%;
+                height: unset;
+                padding: 5px;
+
+                li{
+                    margin: 0 24px 0 0;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .get-started{
+            display: inline-flex;
+            padding: 16px 30px;
+            border: none;
+            border-radius: 32px;
+            color: $white;
+            background-color: $bright-red;
+            box-shadow: 0 0 3px 3px hsla(12, 88%, 59%, .3);
+            @include transition(.3s);
+
+            &:hover{
+                color: $very-light-gray;
+                cursor: pointer;
+                transform: scale(1.01);
+            }
+        }
+        .hamburger{
+            display: none;
         }
     }
 }

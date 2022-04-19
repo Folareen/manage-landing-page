@@ -28,8 +28,8 @@ header nav {
   top: 110px;
   right: 0;
   left: 0;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header nav.open {
@@ -59,8 +59,8 @@ header nav ul {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header nav ul li {
@@ -79,8 +79,8 @@ header nav ul li a {
   font-weight: 700;
   width: 100%;
   height: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header nav ul li a:hover {
@@ -106,8 +106,8 @@ header .hamburger div {
   height: 4px;
   background-color: #242d52;
   margin-bottom: 3px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .hamburger.open-nav .hamburger__top {
@@ -126,6 +126,62 @@ header .hamburger.open-nav .hamburger__bottom {
           transform: rotate(-405deg);
   -webkit-transform-origin: 7px;
           transform-origin: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    height: unset;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background: transparent;
+    position: relative;
+    overflow: visible;
+    top: unset;
+    right: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  header nav ul {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: unset;
+    padding: 5px;
+  }
+  header nav ul li {
+    margin: 0 24px 0 0;
+  }
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  header .get-started {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    background-color: #f25f3a;
+    -webkit-box-shadow: 0 0 3px 3px rgba(242, 95, 58, 0.3);
+            box-shadow: 0 0 3px 3px rgba(242, 95, 58, 0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .get-started:hover {
+    color: #fafafa;
+    cursor: pointer;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  header .hamburger {
+    display: none;
+  }
 }
 
 * {
