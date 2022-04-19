@@ -1,0 +1,12 @@
+@import 'functions';
+@import 'mixins';
+@import 'variables';
+
+@import 'header';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
