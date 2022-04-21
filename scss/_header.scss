@@ -34,7 +34,7 @@
 
 
             ul{
-                height: 236px;
+                height: 244px;
             }
         }
         
@@ -47,7 +47,8 @@
             height: 0;
             overflow: hidden;
             width: 85%;
-            padding: 16px 0;
+            padding: 20px 0;
+            // box-sizing: content-box;
             left: 50%;
             transform: translateX(-50%);
             @include transition(.5s);
@@ -105,16 +106,18 @@
         &.open-nav{
 
             .hamburger__top{
+                background-color: hsl(0, 59%, 41%);
                 transform: rotate(405deg);
-                transform-origin: 7px;
+                transform-origin: 3px;
             }
             .hamburger__middle{
-                transform: rotate(30deg);
-                display: none;
+                transform: scale(0);
+                opacity: 0;
             }
             .hamburger__bottom{
+                background-color: hsl(0, 59%, 41%);
                 transform: rotate(-405deg);
-                transform-origin: 7px;
+                transform-origin: 3px;
             }
 
         }
@@ -124,8 +127,8 @@
 
     @include tablet{
         align-items: center;
-        padding: 55px 62px;
-
+        padding: 55px 0;
+        justify-content: space-around;
 
         img{
             align-items: center;
@@ -149,7 +152,6 @@
                 flex-direction: row;
                 width: 100%;
                 height: unset;
-                // padding: 5px;
                 padding: 0;
                 align-self: center;
 
@@ -176,5 +178,6 @@
     // DESKTOP
     @include desktop{
         padding: 55px 169px;
+        justify-content: space-between;
     }
 }
