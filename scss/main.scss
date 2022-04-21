@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 @import 'functions';
 @import 'mixins';
 @import 'variables';
@@ -13,12 +14,30 @@
 }
 
 body{
+    overflow-x: hidden;
     // background-image: url(/images/bg-tablet-pattern.svg);
-    // background-position: -40px 10px ;
-    // background-size: contain;
-    background-repeat: no-repeat;
+    // background-position: 50vw -10px;
+    // background-position: top right;
+    // background-size: 400px;
+    // background-size: cover;
+    // background-repeat: no-repeat;
     font-family: 'Be Vietnam Pro';
     // font-family: sans-serif;
+    // line-height: 1.5;
+
+    .bg--img{
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        z-index: 1;
+        width: 90vw;
+        min-height: 50vh;
+
+        @include desktop{
+            max-width: 680px;
+            max-height: 680px;
+        }
+    }
 }
 
 .get-started{
@@ -26,6 +45,7 @@ body{
     padding: 16px 30px;
     border: none;
     border-radius: 32px;
+    font-weight: weight(bold);
     color: $white;
     background-color: $bright-red;
     box-shadow: 0 0 3px 3px hsla(12, 88%, 59%, .3);

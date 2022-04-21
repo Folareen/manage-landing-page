@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,11 +11,15 @@
           justify-content: space-between;
   padding: 42px 25px;
   position: relative;
+  z-index: 3;
 }
 
 .header__logo {
   width: 111px;
   height: 26px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header nav {
@@ -25,6 +29,7 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 149, 167, 0.1)), to(rgba(29, 30, 37, 0.6)));
   background-image: linear-gradient(to bottom, rgba(144, 149, 167, 0.1), rgba(29, 30, 37, 0.6));
   position: absolute;
+  z-index: 3;
   top: 110px;
   right: 0;
   left: 0;
@@ -35,6 +40,7 @@
 .header nav.open {
   height: 100vh;
   overflow: visible;
+  z-index: 3;
 }
 
 .header nav.open ul {
@@ -130,7 +136,15 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 54px 169px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 55px 62px;
+  }
+  .header img {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header nav {
     height: unset;
@@ -138,6 +152,9 @@
     width: -moz-max-content;
     width: max-content;
     background: transparent;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     position: relative;
     overflow: visible;
     top: unset;
@@ -147,6 +164,7 @@
             transform: unset;
   }
   .header nav ul {
+    background: transparent;
     position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -154,7 +172,10 @@
             flex-direction: row;
     width: 100%;
     height: unset;
-    padding: 5px;
+    padding: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .header nav ul li {
     margin: 0 24px 0 0;
@@ -172,6 +193,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 55px 169px;
+  }
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,10 +207,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .hero__image {
   width: 90%;
+  max-height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -191,27 +223,56 @@
 
 .hero__textbox {
   text-align: center;
-  background-image: url(/images/bg-simplify-section-mobile.svg);
 }
 
 .hero__textbox h2 {
   font-size: 1.75rem;
-  font-size: 32px;
+  font-size: 36px;
   color: #242d52;
   padding: 0 33px;
   font-weight: 700;
+  font-family: 'Be Vietnam Pro';
 }
 
 .hero__textbox p {
-  font-size: 0.75rem;
-  font-size: 15px;
   color: #9095a7;
-  margin: 21px 0;
+  font-size: 15px;
+  line-height: 1.5;
   padding: 0 41px;
+  margin: 21px 0;
 }
 
 .hero__textbox .get-started {
   margin: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 62px;
+  }
+  .hero__image {
+    width: 50%;
+  }
+  .hero__textbox {
+    width: 50%;
+    text-align: left;
+  }
+  .hero__textbox h2, .hero__textbox p {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin: 62px 169px;
+  }
+  .hero h2 {
+    font-size: 55px;
+  }
 }
 
 * {
@@ -222,8 +283,24 @@
 }
 
 body {
-  background-repeat: no-repeat;
+  overflow-x: hidden;
   font-family: 'Be Vietnam Pro';
+}
+
+body .bg--img {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  z-index: 1;
+  width: 90vw;
+  min-height: 50vh;
+}
+
+@media screen and (min-width: 1200px) {
+  body .bg--img {
+    max-width: 680px;
+    max-height: 680px;
+  }
 }
 
 .get-started {
@@ -233,6 +310,7 @@ body {
   padding: 16px 30px;
   border: none;
   border-radius: 32px;
+  font-weight: 500;
   color: white;
   background-color: #f25f3a;
   -webkit-box-shadow: 0 0 3px 3px rgba(242, 95, 58, 0.3);
