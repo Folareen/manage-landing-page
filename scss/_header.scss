@@ -67,10 +67,8 @@ header{
                         color: $dark-grayish-blue;
                     }
                 }
-
                 
             }
-
 
         }
     }
@@ -115,6 +113,9 @@ header{
     // DESKTOP VIEW
 
     @include desktop{
+        &{
+            padding: 54px 169px;
+        }
 
         // img{
             
@@ -169,4 +170,3 @@ header{
         }
     }
 }
-
