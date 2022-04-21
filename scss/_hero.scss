@@ -1,0 +1,36 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+
+    &__image{
+        width: 90%;
+        align-self: center;
+    }
+
+    &__textbox{
+        text-align: center;
+        background-image: url(/images/bg-simplify-section-mobile.svg);
+        // background-position: center;
+
+        
+        h2{
+            font-size: 1.75rem;
+            font-size: 32px;
+            color: $dark-blue;
+            padding: 0 33px;
+            font-weight: weight(bolder);
+        }
+
+        p{
+            font-size: 0.75rem;
+            font-size: 15px;
+            color: $dark-grayish-blue;
+            margin: 21px 0;
+            padding: 0 41px;
+        }
+
+        .get-started{
+            margin: 8px 0;
+        }
+    }
+}

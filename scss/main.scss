@@ -4,6 +4,7 @@
 @import 'variables';
 
 @import 'header';
+@import 'hero';
 
 *{
     padding: 0;
@@ -13,6 +14,26 @@
 
 body{
     // background-image: url(/images/bg-tablet-pattern.svg);
-    // background-position: center;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    // background-position: -40px 10px ;
+    // background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Be Vietnam Pro';
+    // font-family: sans-serif;
+}
+
+.get-started{
+    display: inline-flex;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 32px;
+    color: $white;
+    background-color: $bright-red;
+    box-shadow: 0 0 3px 3px hsla(12, 88%, 59%, .3);
+    @include transition(.3s);
+
+    &:hover{
+        color: $very-light-gray;
+        cursor: pointer;
+        transform: scale(1.01);
+    }
 }

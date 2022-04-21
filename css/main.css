@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,12 +13,12 @@ header {
   position: relative;
 }
 
-header > img {
+.header__logo {
   width: 111px;
   height: 26px;
 }
 
-header nav {
+.header nav {
   width: 100%;
   height: 0;
   overflow: hidden;
@@ -32,16 +32,16 @@ header nav {
   transition: all 0.5s ease-in-out;
 }
 
-header nav.open {
+.header nav.open {
   height: 100vh;
   overflow: visible;
 }
 
-header nav.open ul {
+.header nav.open ul {
   height: 236px;
 }
 
-header nav ul {
+.header nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,19 +63,19 @@ header nav ul {
   transition: all 0.5s ease-in-out;
 }
 
-header nav ul li {
+.header nav ul li {
   margin-bottom: 26px;
   text-align: center;
 }
 
-header nav ul li:last-child {
+.header nav ul li:last-child {
   margin-bottom: 0;
 }
 
-header nav ul li a {
+.header nav ul li a {
   text-decoration: none;
   color: #242d52;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   width: 100%;
   height: 100%;
@@ -83,25 +83,25 @@ header nav ul li a {
   transition: all 0.5s ease-in-out;
 }
 
-header nav ul li a:hover {
+.header nav ul li a:hover {
   color: #9095a7;
 }
 
-header > .get-started {
+.header > .get-started {
   display: none;
 }
 
-header .hamburger {
+.header .hamburger {
   border: none;
   outline: none;
   background: transparent;
 }
 
-header .hamburger:hover {
+.header .hamburger:hover {
   cursor: pointer;
 }
 
-header .hamburger div {
+.header .hamburger div {
   width: 25px;
   height: 4px;
   background-color: #242d52;
@@ -110,18 +110,18 @@ header .hamburger div {
   transition: all 0.5s ease-in-out;
 }
 
-header .hamburger.open-nav .hamburger__top {
+.header .hamburger.open-nav .hamburger__top {
   -webkit-transform: rotate(405deg);
           transform: rotate(405deg);
   -webkit-transform-origin: 7px;
           transform-origin: 7px;
 }
 
-header .hamburger.open-nav .hamburger__middle {
+.header .hamburger.open-nav .hamburger__middle {
   display: none;
 }
 
-header .hamburger.open-nav .hamburger__bottom {
+.header .hamburger.open-nav .hamburger__bottom {
   -webkit-transform: rotate(-405deg);
           transform: rotate(-405deg);
   -webkit-transform-origin: 7px;
@@ -129,10 +129,10 @@ header .hamburger.open-nav .hamburger__bottom {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .header {
     padding: 54px 169px;
   }
-  header nav {
+  .header nav {
     height: unset;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -146,7 +146,7 @@ header .hamburger.open-nav .hamburger__bottom {
     -webkit-transform: unset;
             transform: unset;
   }
-  header nav ul {
+  .header nav ul {
     position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -156,35 +156,62 @@ header .hamburger.open-nav .hamburger__bottom {
     height: unset;
     padding: 5px;
   }
-  header nav ul li {
+  .header nav ul li {
     margin: 0 24px 0 0;
   }
-  header nav ul li:last-child {
+  .header nav ul li:last-child {
     margin-right: 0;
   }
-  header .get-started {
+  .header .get-started {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    padding: 16px 30px;
-    border: none;
-    border-radius: 32px;
-    color: white;
-    background-color: #f25f3a;
-    -webkit-box-shadow: 0 0 3px 3px rgba(242, 95, 58, 0.3);
-            box-shadow: 0 0 3px 3px rgba(242, 95, 58, 0.3);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
   }
-  header .get-started:hover {
-    color: #fafafa;
-    cursor: pointer;
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  header .hamburger {
+  .header .hamburger {
     display: none;
   }
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__image {
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero__textbox {
+  text-align: center;
+  background-image: url(/images/bg-simplify-section-mobile.svg);
+}
+
+.hero__textbox h2 {
+  font-size: 1.75rem;
+  font-size: 32px;
+  color: #242d52;
+  padding: 0 33px;
+  font-weight: 700;
+}
+
+.hero__textbox p {
+  font-size: 0.75rem;
+  font-size: 15px;
+  color: #9095a7;
+  margin: 21px 0;
+  padding: 0 41px;
+}
+
+.hero__textbox .get-started {
+  margin: 8px 0;
 }
 
 * {
@@ -195,6 +222,29 @@ header .hamburger.open-nav .hamburger__bottom {
 }
 
 body {
-  font-family: 'Be Vietnam Pro', sans-serif;
+  background-repeat: no-repeat;
+  font-family: 'Be Vietnam Pro';
+}
+
+.get-started {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  background-color: #f25f3a;
+  -webkit-box-shadow: 0 0 3px 3px rgba(242, 95, 58, 0.3);
+          box-shadow: 0 0 3px 3px rgba(242, 95, 58, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-started:hover {
+  color: #fafafa;
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 /*# sourceMappingURL=main.css.map */

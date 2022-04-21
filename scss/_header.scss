@@ -1,4 +1,4 @@
-header{
+.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,7 +7,7 @@ header{
 
     // MOBILE VIEW
     
-    >img{
+    &__logo{
         width: 111px;
         height: 26px;
     }
@@ -57,7 +57,7 @@ header{
                 a{
                     text-decoration: none;
                     color: $dark-blue;
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     font-weight: weight(bolder);
                     width: 100%;
                     height: 100%;
@@ -149,22 +149,10 @@ header{
             }
         }
 
-        .get-started{
+        .get-started {
             display: inline-flex;
-            padding: 16px 30px;
-            border: none;
-            border-radius: 32px;
-            color: $white;
-            background-color: $bright-red;
-            box-shadow: 0 0 3px 3px hsla(12, 88%, 59%, .3);
-            @include transition(.3s);
-
-            &:hover{
-                color: $very-light-gray;
-                cursor: pointer;
-                transform: scale(1.01);
-            }
         }
+
         .hamburger{
             display: none;
         }
