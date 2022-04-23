@@ -1,0 +1,40 @@
+.features{
+    margin-top: 97px;
+
+    &__header{
+        text-align: center;
+
+        h3{
+            font-size: 30px;
+            line-height: 1.6;
+            color: $dark-blue;
+            font-weight: weight(bolder);
+            padding: 0 60px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.6;
+            color: $dark-grayish-blue;
+            padding: 0 30px;
+        }
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+
+        &__header{
+            padding: 13px 20px;
+
+            span{
+                padding: 13px 20px;
+                margin-right: 13px;
+                color: $white;
+                background-color: $bright-red;
+                border-radius: 50px;
+
+            }
+        }
+    }
+
+}

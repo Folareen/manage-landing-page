@@ -6,6 +6,7 @@
 
 @import 'header';
 @import 'hero';
+@import 'features';
 
 *{
     padding: 0;
@@ -38,7 +39,7 @@ body{
             height: 680px;
             right: -200px;
             top: -200px;
-            border: 1px solid red;
+            // border: 1px solid red;
         }
     }
 }
