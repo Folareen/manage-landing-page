@@ -32,9 +32,13 @@ body{
         width: 90vw;
         min-height: 50vh;
 
-        @include desktop{
-            max-width: 680px;
-            max-height: 680px;
+        @include tablet{
+            width: 680px;
+            min-height: unset;
+            height: 680px;
+            right: -200px;
+            top: -200px;
+            border: 1px solid red;
         }
     }
 }
