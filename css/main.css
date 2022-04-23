@@ -320,10 +320,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 50px;
+  margin-left: 16px;
 }
 
 .features .feature__header {
-  padding: 13px 20px;
+  padding: 13px 0;
+  color: #242d52;
+  background-color: #ffefeb;
+  border-radius: 50px 0 0 50px;
 }
 
 .features .feature__header span {
@@ -332,6 +337,11 @@
   color: white;
   background-color: #f25f3a;
   border-radius: 50px;
+}
+
+.features .feature p {
+  color: #9095a7;
+  margin: 18px 0;
 }
 
 * {

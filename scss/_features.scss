@@ -22,9 +22,15 @@
     .feature{
         display: flex;
         flex-direction: column;
+        margin-top: 50px;
+        margin-left: 16px;
+
 
         &__header{
-            padding: 13px 20px;
+            padding: 13px 0;
+            color: $dark-blue;
+            background-color: $very-pale-red;
+            border-radius: 50px 0 0 50px;
 
             span{
                 padding: 13px 20px;
@@ -35,6 +41,13 @@
 
             }
         }
+
+        p{
+            color: $dark-grayish-blue;
+            margin: 18px 0;
+        }
     }
 
+
+    
 }
