@@ -322,7 +322,6 @@
           flex-direction: column;
   margin-top: 50px;
   margin-left: 16px;
-  padding-right: 10px;
 }
 
 .features .features__contentbox .feature__header {
@@ -346,6 +345,7 @@
 .features .features__contentbox .feature p {
   color: #9095a7;
   margin: 18px 0;
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -409,7 +409,7 @@ body {
 
 body .bg--img {
   position: absolute;
-  right: -50px;
+  right: -100px;
   top: -50px;
   z-index: 1;
   width: 80vw;
