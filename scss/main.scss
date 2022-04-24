@@ -14,7 +14,7 @@
 }
 
 body{
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     // background-image: url(/images/bg-tablet-pattern.svg);
     // background-position: 50vw -10px;
     // background-position: top right;
@@ -26,7 +26,7 @@ body{
     position: relative;
 
     .bg--img{
-        position: absolute;
+        position: fixed;
         right: -100px;
         top: -50px;
         z-index: 1;
