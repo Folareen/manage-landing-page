@@ -322,6 +322,7 @@
           flex-direction: column;
   margin-top: 50px;
   margin-left: 16px;
+  padding-right: 10px;
 }
 
 .features .features__contentbox .feature__header {
@@ -410,7 +411,7 @@ body .bg--img {
   right: -50px;
   top: -50px;
   z-index: 1;
-  width: 90vw;
+  width: 80vw;
   min-height: 50vh;
 }
 
