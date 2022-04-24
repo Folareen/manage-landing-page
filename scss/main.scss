@@ -32,6 +32,7 @@ body{
         z-index: 1;
         width: 80vw;
         min-height: 50vh;
+        border: 1px solid red;
 
         @include tablet{
             width: 680px;
