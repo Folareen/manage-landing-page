@@ -404,6 +404,7 @@ body {
   overflow-x: hidden;
   font-family: 'Be Vietnam Pro';
   line-height: 1.3;
+  position: relative;
 }
 
 body .bg--img {
