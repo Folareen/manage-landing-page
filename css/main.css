@@ -410,26 +410,6 @@ body {
   position: relative;
 }
 
-body .bg--img {
-  position: absolute;
-  right: -100px;
-  top: -50px;
-  z-index: 1;
-  width: 80vw;
-  min-height: 50vh;
-  border: 1px solid red;
-}
-
-@media screen and (min-width: 768px) {
-  body .bg--img {
-    width: 680px;
-    min-height: unset;
-    height: 680px;
-    right: -200px;
-    top: -200px;
-  }
-}
-
 .get-started {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
