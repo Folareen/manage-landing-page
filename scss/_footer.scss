@@ -1,0 +1,30 @@
+footer{
+    background-color: $very-dark-blue;
+    padding: 45px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .input-container{
+        grid-column: span 1;
+        width: 100%;
+        border: 1px solid red;
+
+        input[type="text"], button{
+            padding: 16px 30px;
+            border: none;
+            border-radius: 32px;
+            font-weight: weight(bold);
+        }
+
+        input[type="text"]{
+            // width: 100;
+        }
+
+        button{
+            background-color: $bright-red;
+            color: $white;
+        }
+
+    }
+
+}

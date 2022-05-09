@@ -520,6 +520,37 @@
       align-self: center;
 }
 
+.simplify button:hover {
+  color: white;
+}
+
+footer {
+  background-color: #1d1e25;
+  padding: 45px 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+footer .input-container {
+  grid-column: span 1;
+  width: 100%;
+  border: 1px solid red;
+}
+
+footer .input-container input[type="text"], footer .input-container button {
+  padding: 16px 30px;
+  border: none;
+  border-radius: 32px;
+  font-weight: 500;
+}
+
+footer .input-container button {
+  background-color: #f25f3a;
+  color: white;
+}
+
 * {
   padding: 0;
   margin: 0;
