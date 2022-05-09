@@ -400,7 +400,7 @@
 
 @media screen and (min-width: 1200px) {
   .testimonies--container {
-    padding: 0 0 164px 0;
+    padding: 0 0 169px 0;
   }
 }
 
@@ -469,6 +469,55 @@
 .testimonies--container .testimonies__content p {
   font-size: 15px;
   color: #9095a7;
+}
+
+.simplify {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f25f3a;
+  padding: 69px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .simplify {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 69px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .simplify {
+    padding: 169px;
+  }
+}
+
+.simplify h4 {
+  color: white;
+  font-size: 41px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.simplify button {
+  color: #f25f3a;
+  background-color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 * {
