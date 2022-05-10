@@ -17,7 +17,7 @@ let testimoniesPosition = document.querySelector('.testimonies__content').getBou
 // document.querySelector('')
 // let position = TESTIMONIES_CONTAINER.getBoundingClientRect() / 
 
-setInterval(() => {
+function moveTranslate(){
     setTimeout(
         () => {
             TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
@@ -52,7 +52,14 @@ setInterval(() => {
     
         }, 3000
     )
-}, 15000);
+}
+setTimeout(() => {
+    moveTranslate();
+
+    setInterval(() => {
+        moveTranslate()
+    }, 15000);
+}, 3000);
 
 // console.log(TESTIMONIES_CONTAINER.getBoundingClientRect())
 
