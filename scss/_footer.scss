@@ -7,24 +7,80 @@ footer{
     .input-container{
         grid-column: span 1;
         width: 100%;
-        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        // border: 1px solid red;
 
         input[type="text"], button{
             padding: 16px 30px;
             border: none;
             border-radius: 32px;
             font-weight: weight(bold);
+            margin: 0 5px;
         }
 
         input[type="text"]{
-            // width: 100;
+            // display: block;
+            flex: 1;
         }
 
         button{
             background-color: $bright-red;
             color: $white;
+
+            &:hover{
+                cursor: pointer;
+            }
         }
 
     }
 
+    .footer-nav{
+        display: flex;
+        justify-content: space-around;
+        grid-column: span 1;
+        margin: 40px 0;
+        line-height: 2;
+
+        .nav, .extra-nav{
+            list-style: none;
+
+            li{
+
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .logo--links{
+        display: flex;
+        flex-direction: column;
+        // align-items: space-between;
+        grid-column: span 1;
+
+        .links-container{
+            display: flex;
+            justify-content: space-evenly;
+
+            img{
+                width: 30px;
+            }
+        }
+
+        img[src="images/logo.svg"]{
+            width: 200px;
+            height: 30px;
+            align-self: center;
+            margin-top: 50px;
+        }
+    }
+
+    .copyright{
+        color: $dark-grayish-blue;
+        margin-top: 50px;
+        text-align: center;
+    }
 }

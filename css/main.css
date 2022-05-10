@@ -536,7 +536,12 @@ footer {
 footer .input-container {
   grid-column: span 1;
   width: 100%;
-  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .input-container input[type="text"], footer .input-container button {
@@ -544,11 +549,92 @@ footer .input-container input[type="text"], footer .input-container button {
   border: none;
   border-radius: 32px;
   font-weight: 500;
+  margin: 0 5px;
+}
+
+footer .input-container input[type="text"] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 footer .input-container button {
   background-color: #f25f3a;
   color: white;
+}
+
+footer .input-container button:hover {
+  cursor: pointer;
+}
+
+footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  grid-column: span 1;
+  margin: 40px 0;
+  line-height: 2;
+}
+
+footer .footer-nav .nav, footer .footer-nav .extra-nav {
+  list-style: none;
+}
+
+footer .footer-nav .nav li a, footer .footer-nav .extra-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .logo--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-column: span 1;
+}
+
+footer .logo--links .links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .logo--links .links-container img {
+  width: 30px;
+}
+
+footer .logo--links img[src="images/logo.svg"] {
+  width: 200px;
+  height: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 50px;
+}
+
+footer .copyright {
+  color: #9095a7;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.attribution {
+  background-color: #9095a7;
+  font-size: 14px;
+  text-align: center;
+  padding: 3px;
+}
+
+.attribution a {
+  color: #242d52;
 }
 
 * {
