@@ -4,8 +4,22 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
 
+    @include desktop{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "l n i"
+        "l n c";
+    }
+
     .input-container{
         grid-column: span 1;
+
+        @include desktop{
+            // grid-column: unset;
+            grid-area: i;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -39,6 +53,14 @@ footer{
         display: flex;
         justify-content: space-around;
         grid-column: span 1;
+
+        @include desktop{
+            grid-area: n;
+            // border: 1px solid red;
+            // grid-column: unset;
+
+        }
+
         margin: 40px 0;
         line-height: 2;
 
@@ -58,12 +80,27 @@ footer{
     .logo--links{
         display: flex;
         flex-direction: column;
+        // border: 1px solid red;
+        // border: 1px solid red;
+        @include desktop{
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
         // align-items: space-between;
         grid-column: span 1;
+
+        @include desktop{
+            // grid-column: unset;
+
+            grid-area: l;
+            // grid-column: unset;
+
+        }
 
         .links-container{
             display: flex;
             justify-content: space-evenly;
+
 
             img{
                 width: 30px;
@@ -75,6 +112,8 @@ footer{
             height: 30px;
             align-self: center;
             margin-top: 50px;
+
+
         }
     }
 
@@ -82,5 +121,9 @@ footer{
         color: $dark-grayish-blue;
         margin-top: 50px;
         text-align: center;
+
+        @include desktop{
+            grid-area: c;
+        }
     }
 }
