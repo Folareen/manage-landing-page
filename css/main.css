@@ -393,18 +393,18 @@
   }
 }
 
-.testimonies--container {
+.testimonies--section {
   text-align: center;
   padding: 0 0 50px 0;
 }
 
 @media screen and (min-width: 1200px) {
-  .testimonies--container {
+  .testimonies--section {
     padding: 0 0 169px 0;
   }
 }
 
-.testimonies--container h3 {
+.testimonies--section h3 {
   font-size: 46px;
   color: #242d52;
   font-weight: 700;
@@ -412,27 +412,29 @@
   margin: 70px 0;
 }
 
-.testimonies--container .testimonies {
+.testimonies--section .testimonies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 40px 0;
   width: 400vw;
+  -webkit-transition: all .9s linear;
+  transition: all .9s linear;
 }
 
 @media screen and (min-width: 768px) {
-  .testimonies--container .testimonies {
+  .testimonies--section .testimonies {
     width: 200vw;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .testimonies--container .testimonies {
+  .testimonies--section .testimonies {
     width: 150vw;
   }
 }
 
-.testimonies--container .testimonies__content {
+.testimonies--section .testimonies__content {
   margin: 0 10px;
   position: relative;
   background-color: #fafafa;
@@ -442,31 +444,31 @@
 }
 
 @media screen and (min-width: 768px) {
-  .testimonies--container .testimonies__content {
+  .testimonies--section .testimonies__content {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .testimonies--container .testimonies__content {
+  .testimonies--section .testimonies__content {
     width: 60%;
   }
 }
 
-.testimonies--container .testimonies__content img {
+.testimonies--section .testimonies__content img {
   width: 80px;
   height: 77px;
   position: relative;
   top: -37.5px;
 }
 
-.testimonies--container .testimonies__content h5 {
+.testimonies--section .testimonies__content h5 {
   font-size: 15px;
   color: #242d52;
   margin-bottom: 10px;
 }
 
-.testimonies--container .testimonies__content p {
+.testimonies--section .testimonies__content p {
   font-size: 15px;
   color: #9095a7;
 }

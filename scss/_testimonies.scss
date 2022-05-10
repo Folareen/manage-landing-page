@@ -1,4 +1,4 @@
-.testimonies--container{
+.testimonies--section{
     text-align: center;
 
     padding: 0 0 50px 0;
@@ -19,6 +19,7 @@
         display: flex;
         margin: 40px 0;
         width: 400vw;
+        transition: all .9s linear;
 
         @include tablet{
             width: 200vw;
