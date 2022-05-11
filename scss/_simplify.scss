@@ -9,6 +9,7 @@
         flex-direction: row;
         padding: margin(tablet);
     }
+    
     @include desktop{
         padding-right: margin(desktop);
         padding-left: margin(desktop);

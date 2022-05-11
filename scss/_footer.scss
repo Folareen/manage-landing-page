@@ -15,15 +15,14 @@ footer{
         grid-column: span 1;
 
         @include desktop{
-            // grid-column: unset;
             grid-area: i;
             align-items: flex-start;
             margin-top: 50px;
         }
+
         width: 100%;
         display: flex;
         justify-content: space-between;
-        // border: 1px solid red;
 
         input[type="text"], button{
             padding: 16px 30px;
@@ -34,7 +33,6 @@ footer{
         }
 
         input[type="text"]{
-            // display: block;
             flex: 1;
         }
 
@@ -56,9 +54,6 @@ footer{
 
         @include desktop{
             grid-area: n;
-            // border: 1px solid red;
-            // grid-column: unset;
-
         }
 
         margin: 40px 0;
@@ -80,21 +75,16 @@ footer{
     .logo--links{
         display: flex;
         flex-direction: column;
-        // border: 1px solid red;
-        // border: 1px solid red;
+
         @include desktop{
             flex-direction: column-reverse;
             justify-content: space-between;
         }
-        // align-items: space-between;
+
         grid-column: span 1;
 
         @include desktop{
-            // grid-column: unset;
-
             grid-area: l;
-            // grid-column: unset;
-
         }
 
         .links-container{
@@ -125,5 +115,6 @@ footer{
         @include desktop{
             grid-area: c;
         }
+        
     }
 }

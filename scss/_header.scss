@@ -5,8 +5,8 @@
     padding: 42px 25px;
     position: relative;
     z-index: 3;
+
     // MOBILE VIEW
-    
     &__logo{
         width: 111px;
         height: 26px;
@@ -20,7 +20,6 @@
         background-image:linear-gradient(to bottom, hsla(227, 12%, 61%, .1), hsla(233, 12%, 13%, .6));
         position: absolute;
         z-index: 4;
-        // top: 110px;
         top: 0;
         right: 0;
         left: 0;
@@ -48,7 +47,6 @@
             overflow: hidden;
             width: 85%;
             padding: 20px 0;
-            // box-sizing: content-box;
             left: 50%;
             transform: translateX(-50%);
             @include transition(.5s);
@@ -123,7 +121,6 @@
     }
 
     // TABLET VIEW
-
     @include tablet{
         align-items: center;
         padding: 55px 0;
