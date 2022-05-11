@@ -736,6 +736,11 @@ body {
   position: relative;
 }
 
+.nav-fixed {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .get-started {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

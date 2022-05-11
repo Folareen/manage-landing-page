@@ -50,6 +50,10 @@ body{
     //     }
     // }
 }
+.nav-fixed{
+    height: 100vh;
+    overflow-y: hidden;
+}
 
 .get-started{
     display: inline-flex;

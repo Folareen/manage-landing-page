@@ -6,6 +6,7 @@ NAV_BUTTON.addEventListener('click', openNav);
 function openNav(){
     NAV_BUTTON.classList.toggle('open-nav')
     NAV.classList.toggle('open');
+    document.body.classList.toggle('nav-fixed')
 }
 
 const TESTIMONIES_CONTAINER = document.querySelector('.testimonies');
