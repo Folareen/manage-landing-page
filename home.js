@@ -16,30 +16,39 @@ let testimoniesPosition = document.querySelector('.testimonies__content').getBou
 
 // document.querySelector('')
 // let position = TESTIMONIES_CONTAINER.getBoundingClientRect() / 
+let curr ;
+function paginate(page){
+    Array.from(document.querySelectorAll('.pagination > span')).forEach((item) => item.classList.remove('current'));
+    Array.from(document.querySelectorAll('.pagination > span'))[page].classList.add('current');
+}
+paginate(0);
 
 function moveTranslate(){
     setTimeout(
         () => {
             TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
+            curr = 1;
+            paginate(curr)
     
             setTimeout(
                 () => {
-                    TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
+                    TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + 40}px)`;
+                    curr = 2;
+                    paginate(curr)
+
 
                     setTimeout(
                         () => {
-                            TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + 40}px)`;
+                            TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + testimoniesPosition + 60}px)`;
+                            curr = 3;
+                            paginate(curr)
 
                             setTimeout(
                                 () => {
-                                    TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + testimoniesPosition + 60}px)`;
+                                    TESTIMONIES_CONTAINER.style.transform = `translateX(0px)`;
+                                    curr = 0;
+                                    paginate(curr)
 
-                                    setTimeout(
-                                        () => {
-                                            TESTIMONIES_CONTAINER.style.transform = `translateX(0px)`;
-                                    
-                                        }, 3000
-                                    )
                             
                                 }, 3000
                             )
@@ -58,7 +67,7 @@ setTimeout(() => {
 
     setInterval(() => {
         moveTranslate()
-    }, 15000);
+    }, 12000);
 }, 3000);
 
 // console.log(TESTIMONIES_CONTAINER.getBoundingClientRect())

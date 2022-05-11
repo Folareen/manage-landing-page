@@ -418,8 +418,8 @@
   display: flex;
   margin: 40px 0;
   width: 400vw;
-  -webkit-transition: all .9s linear;
-  transition: all .9s linear;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -471,6 +471,37 @@
 .testimonies--section .testimonies__content p {
   font-size: 15px;
   color: #9095a7;
+}
+
+.testimonies--section .pagination {
+  margin: 30px auto 60px auto;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonies--section .pagination {
+    display: none;
+  }
+}
+
+.testimonies--section .pagination span {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 2px solid #f25f3a;
+  border-radius: 50%;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.testimonies--section .pagination span.current {
+  background-color: #f25f3a;
 }
 
 .simplify {
