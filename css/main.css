@@ -418,12 +418,14 @@
   display: flex;
   margin: 40px 0;
   width: 400vw;
+  max-width: 1534px;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
 
 @media screen and (min-width: 768px) {
   .testimonies--section .testimonies {
+    max-width: unset;
     width: 200vw;
   }
 }
