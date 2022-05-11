@@ -130,9 +130,9 @@
 }
 
 .header .hamburger.open-nav .hamburger__middle {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  opacity: 0;
+  background-color: #a62b2b;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
 }
 
 .header .hamburger.open-nav .hamburger__bottom {

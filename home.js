@@ -13,10 +13,6 @@ const TESTIMONIES_CONTAINER = document.querySelector('.testimonies');
 
 let testimoniesPosition = document.querySelector('.testimonies__content').getBoundingClientRect().width
 
-// Array.from(document.querySelectorAll('.testimonies__content')).forEach((testimony) => {console.log(testimony.getBoundingClientRect().width)})
-
-// document.querySelector('')
-// let position = TESTIMONIES_CONTAINER.getBoundingClientRect() / 
 let curr ;
 function paginate(page){
     Array.from(document.querySelectorAll('.pagination > span')).forEach((item) => item.classList.remove('current'));
@@ -51,16 +47,16 @@ function moveTranslate(){
                                     paginate(curr)
 
                             
-                                }, 3000
+                                }, 4000
                             )
                     
-                        }, 3000
+                        }, 4000
                     )
             
-                }, 3000
+                }, 4000
             )
     
-        }, 3000
+        }, 4000
     )
 }
 setTimeout(() => {
@@ -68,9 +64,5 @@ setTimeout(() => {
 
     setInterval(() => {
         moveTranslate()
-    }, 12000);
+    }, 16000);
 }, 3000);
-
-// console.log(TESTIMONIES_CONTAINER.getBoundingClientRect())
-
-// console.log(testimoniesPosition)

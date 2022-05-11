@@ -111,8 +111,8 @@
                 transform-origin: 3px;
             }
             .hamburger__middle{
-                transform: scale(0);
-                opacity: 0;
+                background-color: hsl(0, 59%, 41%);
+                transform: scale(0.2);
             }
             .hamburger__bottom{
                 background-color: hsl(0, 59%, 41%);
