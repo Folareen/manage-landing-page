@@ -4,15 +4,19 @@
     flex-direction: column;
     background-color: $bright-red;
     padding: margin(tablet) 20px;
+    background-image: url(/images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
 
     @include tablet{
         flex-direction: row;
         padding: margin(tablet);
     }
-    
+
     @include desktop{
         padding-right: margin(desktop);
         padding-left: margin(desktop);
+        background-image: url(/images/bg-simplify-section-desktop.svg);
+        background-repeat: no-repeat;
     }
 
     h4{
