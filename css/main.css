@@ -740,8 +740,8 @@ html, body {
 body {
   overflow-x: hidden;
   background-image: url(/images/bg-tablet-pattern.svg), url(/images/bg-tablet-pattern.svg);
-  background-position: 50px -50px, 55vw 600px;
-  background-size: contain, 70vw 250px;
+  background-position: 50px -50px, 60vw 500px;
+  background-size: contain, 80vw 350px;
   background-repeat: no-repeat;
   font-family: 'Be Vietnam Pro';
   line-height: 1.3;
