@@ -34,7 +34,6 @@ function moveTranslate(){
     if(TESTIMONIES_CONTAINER.getBoundingClientRect().width > 1534 ){
         paginate(0, 1);
 
-
         setTimeout(
             () => {
                 TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
@@ -50,7 +49,6 @@ function moveTranslate(){
                                 TESTIMONIES_CONTAINER.style.transform = `translateX(0px)`;
                                 paginate(0, 1)
 
-                        
                             }, 4000
                         )
           
@@ -64,27 +62,23 @@ function moveTranslate(){
         setTimeout(
             () => {
                 TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
-                curr = 1;
-                paginate(curr)
+                paginate(1)
         
                 setTimeout(
                     () => {
                         TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + 40}px)`;
-                        curr = 2;
-                        paginate(curr)
+                        paginate(2)
     
     
                         setTimeout(
                             () => {
                                 TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + testimoniesPosition + 60}px)`;
-                                curr = 3;
-                                paginate(curr)
+                                paginate(3)
     
                                 setTimeout(
                                     () => {
                                         TESTIMONIES_CONTAINER.style.transform = `translateX(0px)`;
-                                        curr = 0;
-                                        paginate(curr)
+                                        paginate(0)
     
                                 
                                     }, 4000
