@@ -22,15 +22,15 @@ html, body{
 }
 body{
     overflow-x: hidden;
-    background-image: url(/images/bg-tablet-pattern.svg);
-    background-position: 50px -50px;
+    background-image: url(/images/bg-tablet-pattern.svg), url(/images/bg-tablet-pattern.svg);
+    background-position: 50px -50px, 55vw 600px;
     
     @include tablet{
-        background-position: 50vw -20vh;
+        background-position: 50vw -20vh, -40vw 120vh;
         background-size: 60vw 100vh;
     }
 
-    background-size: contain;
+    background-size: contain, 70vw 250px;
     background-repeat: no-repeat;
     font-family: 'Be Vietnam Pro';
     line-height: 1.3;
