@@ -561,10 +561,6 @@
       align-self: center;
 }
 
-.simplify button:hover {
-  color: white;
-}
-
 footer {
   background-color: #1d1e25;
   padding: 45px 25px;
@@ -617,6 +613,10 @@ footer .input-container input[type="text"] {
           flex: 1;
 }
 
+footer .input-container input[type="text"]:hover {
+  outline: 1px solid #f25f3a;
+}
+
 footer .input-container button {
   background-color: #f25f3a;
   color: white;
@@ -650,6 +650,10 @@ footer .footer-nav .nav, footer .footer-nav .extra-nav {
 footer .footer-nav .nav li a, footer .footer-nav .extra-nav li a {
   text-decoration: none;
   color: white;
+}
+
+footer .footer-nav .nav li a:hover, footer .footer-nav .extra-nav li a:hover {
+  color: #f25f3a;
 }
 
 footer .logo--links {
@@ -777,7 +781,7 @@ body {
 }
 
 .get-started:hover {
-  color: #fafafa;
+  opacity: .8;
   cursor: pointer;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);

@@ -54,7 +54,7 @@ body{
     @include transition(.3s);
 
     &:hover{
-        color: $very-light-gray;
+        opacity: .8;
         cursor: pointer;
         transform: scale(1.01);
     }
