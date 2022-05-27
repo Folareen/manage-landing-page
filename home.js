@@ -45,74 +45,92 @@ function moveTranslate(){
     if(
         TESTIMONIES_CONTAINER.getBoundingClientRect().width > 1535
     ){
-        transform(
-            ()=>{
-                TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
-                paginate(1, 2) 
-            }, 4000
-        )
-        .then(
-            ()=>{
-                return transform(
+        (async ()=>{
+
+            await(        
+                transform(
+                ()=>{
+                    TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
+                    paginate(1, 2) 
+                }, 4000
+            ))
+
+            await(
+                transform(
                     ()=>{
                         TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + 40}px)`;
                         paginate(2, 3)
                     }, 4000
                 )
-            }
-        )
-        .then(
-            ()=>{
-                return transform(
+            )
+
+            await(
+                transform(
                     ()=>{
                         TESTIMONIES_CONTAINER.style.transform = `translateX(0px)`;
                         paginate(0, 1)
                     }, 4000
                 )
-            }
-        )
+            )
+
+    })()
     }
+
+
     else{
-        transform(
-            ()=>{
-                TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
-                paginate(1)
-                console.log(1);
-            }, 4000
-        )
-        .then(
-            ()=>{
-                return transform(
+
+        (async ()=>{
+            await(        
+                transform(
+                    ()=>{
+                        TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + 20}px)`;
+                        paginate(1)
+                        console.log(1);
+                    }, 4000
+                )
+            )
+
+            await(
+                transform(
                     ()=>{
                         TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + 40}px)`;
                         paginate(2)
                         console.log(2);
                     }, 4000
                 )
-            }
-        )
-        .then(
-            ()=>{
-                return transform(
+            )
+
+            await(
+                transform(
                     ()=>{
                         TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + testimoniesPosition + 60}px)`;
                         paginate(3)
                         console.log(3);
                     }, 4000
                 )
-            }
-        )
-        .then(
-            ()=>{
-                return transform(
+            )
+
+            await(
+                transform(
+                    ()=>{
+                        TESTIMONIES_CONTAINER.style.transform = `translateX(-${testimoniesPosition + testimoniesPosition + testimoniesPosition + 60}px)`;
+                        paginate(3)
+                        console.log(3);
+                    }, 4000
+                )
+            )
+
+            await(
+                transform(
                     ()=>{
                         TESTIMONIES_CONTAINER.style.transform = `translateX(0px)`;
                         paginate(0)
                         console.log(0);
                     }, 4000
                 )
-            }
-        )
+            )
+
+    })()
     }
 
 }
